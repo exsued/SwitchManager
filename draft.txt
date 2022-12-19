@@ -1,0 +1,39 @@
+/*
+		list := widget.NewList(
+			func() int {
+				return len(data)
+			},
+			func() fyne.CanvasObject {
+				return widget.NewLabel("template")
+			},
+			func(i widget.ListItemID, o fyne.CanvasObject) {
+				o.(*widget.Label).SetText(data[i])
+			})
+
+		w.SetContent(list)
+		w.SetContent(widget.NewLabel("Ifaces"))
+	*/
+
+	/*
+		// Get a list of all interfaces.
+		ifaces, err := net.Interfaces()
+		if err != nil {
+			panic(err)
+		}
+
+		var wg sync.WaitGroup
+		for _, iface := range ifaces {
+			wg.Add(1)
+			// Start up a scan on each interface.
+			go func(iface net.Interface) {
+				defer wg.Done()
+				if err := scan(&iface); err != nil {
+					log.Printf("interface %v: %v", iface.Name, err)
+				}
+			}(iface)
+		}
+		// Wait for all interfaces' scans to complete.  They'll try to run
+		// forever, but will stop on an error, so if we get past this Wait
+		// it means all attempts to write have failed.
+		wg.Wait()
+	*/
